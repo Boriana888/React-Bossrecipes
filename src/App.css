@@ -1,0 +1,852 @@
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+html,
+body,
+#root,
+.App {
+  min-height: -webkit-fill-available;
+  min-width: -webkit-fill-available;
+  max-width: 100vw;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.searchPopup {
+  background-color: rgba(241, 241, 241, 0.92);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchPopup form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #a1a1a1;
+  margin-top: 8rem;
+}
+
+.searchPopup svg {
+  height: 2rem;
+}
+
+.searchPopup .searchDiv {
+  width: 100%;
+  border-bottom: 1.5px lightgray solid;
+}
+
+.searchDiv input {
+  width: 85%;
+  border: 0;
+  background-color: transparent;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  margin-left: 1rem;
+}
+
+.searchDiv input::placeholder {
+  color: rgba(161, 161, 161, 0.9);
+}
+
+.searchDiv input:focus {
+  outline: none;
+}
+
+.sticky {
+  position: fixed;
+  width: 98%;
+  background-color: white;
+  padding-right: 1rem;
+}
+
+.header {
+  height: 3.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid #bbb;
+  font-style: italic;
+}
+
+header .parts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .parts:nth-of-type(odd) {
+  gap: 1rem;
+}
+
+.header span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header span {
+  font-family: "Source Serif Pro", serif;
+  color: #a1a1a1;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+.header svg {
+  height: 1.5rem;
+  margin-left: 0.6rem;
+}
+
+.header h1,
+.brandsContainer {
+  color: rgb(197, 179, 88);
+}
+
+.parts .searchBtn {
+  margin-left: 1rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  color: azure;
+}
+
+.footer a {
+  position: relative;
+  margin-left: 1rem;
+  color: white;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.findCard {
+  height: 100vh;
+  background-image: url(./images/page.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.findCard .findTitle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  margin-top: 4rem;
+  font-size: 3.5rem;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+}
+
+.findCard .searchSection {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 37.5rem;
+  height: 2.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
+}
+.moto {
+  color: black;
+  font-size: 24px;
+  font-weight: bolder;
+  text-shadow: 4px 4px 8px white;
+  font-style: italic;
+}
+
+.searchSection svg {
+  height: 70%;
+  margin-left: 0.5rem;
+  color: #a1a1a1;
+}
+
+.signUpCard {
+  background-color: rgb(197, 179, 88);
+  min-height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 2.5rem;
+}
+.emailNewsCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.emailCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 4.5rem;
+}
+
+.emailCard h3 {
+  font: bold 1.25rem/1.625rem "Source Serif Pro", serif;
+  color: #fff;
+  padding: 0;
+}
+
+.emailCard input {
+  width: 13.125rem;
+  height: 90%;
+  font: bold 0.75rem/12 "Renner", sans-serif;
+  letter-spacing: 1px;
+  vertical-align: middle;
+  border: 1px #a1a1a1 solid;
+
+  margin-left: 1.5rem;
+}
+.emailCard input:focus {
+  outline: none;
+}
+
+.emailCard button {
+  height: 100%;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+.emailCard input::placeholder {
+  color: lightgray;
+}
+.newsLetterContent {
+  background-color: snow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2.5rem 0.5rem;
+  gap: 2rem;
+}
+
+.newsLetter {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+}
+
+.newsLetter .newsLetterTitle {
+  font: normal bold 20px "Renner", sans-serif;
+  color: rgb(197, 179, 88);
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+
+.newsLetterTitle svg {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.newsLetter .newsLetterDesc {
+  font-size: small;
+  font-weight: 600;
+  padding: 0 1rem;
+}
+
+.signUpDone {
+  text-align: center;
+}
+
+.hLine {
+  border-left: 1px solid black;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url(./images/viber_image_2023-08-20_09-56-11-068.jpg);
+  background-size: cover;
+  align-items: center;
+}
+
+.linksUl li {
+  text-decoration: underline transparent;
+  font-size: 22px !important;
+  font-style: italic !important;
+  font-weight: bold !important;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.linksUl li:hover {
+  text-decoration-color: rgb(197, 179, 88);
+  transition: 0.2s text-decoration-color ease-in;
+}
+
+.linkCard .linkTitle {
+  font: bold 1rem/1rem "Renner", sans-serif;
+  color: rgb(197, 179, 88);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.linkCard li {
+  font: normal 0.75rem/2rem "Renner", sans-serif;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.mainFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgb(197, 179, 88);
+  color: white;
+  padding: 2rem 0;
+}
+
+.navCard strong {
+  font: bold 1.5rem "Renner", sans-serif;
+}
+
+.navCard .socialsUl {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.nonImageUl {
+  font: bold 0.75rem/1.0625rem "Renner", sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 5px 0;
+}
+
+.socialsUl svg {
+  height: 1.6rem;
+}
+
+.slideNavBehind {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+}
+
+.slideNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  height: 100vh;
+  width: 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  color: #fff;
+  transition: 0.5s;
+  overflow: hidden;
+  text-align: center;
+}
+
+.slideNav .cancelDiv {
+  width: 100%;
+  text-align: start;
+  margin-left: 3rem;
+}
+
+.slideNav svg {
+  height: 1.6rem;
+}
+
+.slideNav .navLogo {
+  background-color: rgb(197, 179, 88);
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif, Helvetica, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideNav li {
+  letter-spacing: 1px;
+  font-weight: 650;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.slideNav .socialsDiv {
+  font-weight: 600;
+  font-size: small;
+}
+
+.socialsDiv ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.slideNav .signIn {
+  border: 1px solid gainsboro;
+  color: gainsboro;
+  padding: 0.5rem 1.8rem;
+  background-color: transparent;
+}
+
+.comp-card-wrapper {
+  background-color: #333;
+}
+
+.divCrossImage {
+  width: 100%;
+  text-align: end;
+}
+
+.divCrossImage svg {
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+
+.comp-card-wrapper .divVertImage {
+  width: 100%;
+  text-align: center;
+}
+
+.comp-card-wrapper svg {
+  height: 3rem;
+  color: #bbb;
+}
+
+.food-card-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  gap: 2rem;
+  padding: 1rem 4rem;
+  background-color: rgb(249, 245, 239);
+  min-height: 81vh;
+  overflow-y: auto;
+}
+
+.food-card-wrapper .card-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-card-wrapper a {
+  text-decoration: none;
+  --s: 10px; /* control the size */
+  padding: var(--s);
+  border: calc(2 * var(--s)) solid #0000;
+  outline: 1px solid rgb(197, 179, 88);
+  outline-offset: calc(-1 * var(--s));
+  background: conic-gradient(from 90deg at 1px 1px, #0000 25%, #000 0);
+}
+
+.errorScreen,
+.notFoundScreen,
+.loadingScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+}
+.errorScreen p,
+.notFoundScreen p {
+  font-size: xx-large;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.view-card-title {
+  color: black;
+  letter-spacing: 0.5px;
+}
+
+.recipe-view-card {
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 24rem;
+  width: 20rem;
+  background-color: #fff;
+}
+
+.recipe-view-card .imgContainer {
+  height: 80%;
+  width: 100%;
+}
+
+.imgContainer img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.signInContainer {
+  width: 100%;
+  height: 100%;
+  min-height: 107vh;
+  background-image: url(./images/logIn.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.signIn-form {
+  backdrop-filter: blur(10px);
+
+  width: max-content;
+  margin-left: auto;
+  margin-right: 13rem;
+  padding: 2rem 1rem;
+  margin-bottom: 18rem;
+  border: none;
+}
+
+.signIn-form h1 {
+  margin-top: 1.5rem;
+  color: #eee;
+  font-style: italic;
+}
+
+.signIn-form h2 {
+  color: #eee8aa;
+  font-style: italic;
+}
+
+.input-sect {
+  margin-top: 1.2rem;
+  gap: 0.2rem;
+  color: #eee;
+}
+
+.input-sect label {
+  font-size: small;
+  font-weight: 600;
+}
+
+.input-sect input {
+  font-size: large;
+  padding: 0.6rem 0;
+}
+
+.signIn-form button {
+  width: 100%;
+  font-size: large;
+  padding: 0.4rem 0;
+  background-color: #333;
+  color: #fff;
+  margin-top: 1.2rem;
+}
+
+.recipe-header {
+  height: 32rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(197, 179, 88);
+  font-style: italic;
+  border-bottom: 5px wheat solid;
+}
+
+.recipe-header .header-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.header-info .header-name {
+  margin-bottom: 1rem;
+  letter-spacing: 0.6px;
+}
+
+.header-info span {
+  font-size: large;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+}
+
+.recipe-header .header-img {
+  width: 60%;
+}
+
+.header-img img {
+  width: 80%;
+  height: 50vh;
+  --s: 10px; /* control the size */
+  padding: var(--s);
+  border: calc(2 * var(--s)) solid #0000;
+  outline: 1px solid rgb(197, 179, 88);
+  outline-offset: calc(-1 * var(--s));
+  background: conic-gradient(
+    from 90deg at 1px 1px,
+    #0000 25%,
+    rgb(197, 179, 88) 0
+  );
+}
+
+.ingredients-sect {
+  height: max-content;
+}
+
+.ingredients-sect h2 {
+  padding: 0.4rem 0;
+  border-bottom: 2px wheat solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredients-ul-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.ingredients-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin: 0.4rem 0;
+}
+
+.ingredients-ul .ul-title {
+  font-size: large;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+.ingredients-ul li {
+  width: max-content;
+}
+
+.recipe-info-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-info-div .recipe-info-sect {
+  width: max-content;
+  max-width: 80%;
+}
+
+.instruction-ul,
+.ingredients-ul {
+  letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.600000023841858em;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-wrap: normal;
+  color: rgba(51, 51, 51, 1);
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 2px wheat solid;
+  border-bottom: 2px wheat solid;
+}
+
+.instruction-ul li {
+  margin-top: 1.2rem;
+}
+
+.instruction-ul .step-count {
+  font-weight: 700;
+}
+.instruction-ul p {
+  margin: 0.4rem 0;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid rgb(197, 179, 88); /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.click:hover,
+a:hover,
+button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+/* .displayGone {
+  display: none;
+} */
+
+/*Scrollbar*/
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #eee;
+  box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(left, #96a6bf, #63738c);
+  box-shadow: inset 0 0 1px 1px #5c6670;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(left, #8391a6, #536175);
+}
+
+@media (max-width: 760px) {
+  html,
+  body,
+  #root,
+  .App {
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    overflow-x: hidden;
+  }
+  .header span {
+    display: none;
+  }
+  .brandsContainer {
+    display: none;
+  }
+  .emailCard input {
+    display: none;
+  }
+  .emailCard button {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .mainFooter {
+    display: flex;
+    align-items: center;
+  }
+
+  .signUpCard,
+  .mainFooter,
+  .signInLink {
+    margin: auto;
+  }
+  .recipe-header {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .recipe-header .header-info {
+    width: 100%;
+  }
+  .recipe-header .header-img {
+    width: 100%;
+    height: 31rem;
+  }
+  .findCard .findTitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .linkCard:not(:first-child),
+  .hLine {
+    display: none;
+  }
+
+  .linkCard {
+    justify-content: center;
+  }
+
+  .findCard .searchSection {
+    width: 80%;
+  }
+  .header-info .header-name {
+    width: max-content;
+    font-size: large;
+  }
+}
+
+@media (max-width: 400px) {
+  .food-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recipe-view-card {
+    height: 20rem;
+  }
+
+  .searchPopup form {
+    width: 86%;
+  }
+  .moto {
+    font-size: 1rem;
+  }
+}
